@@ -4,15 +4,15 @@
 
 int main()
 {
-    int answer[4]; // ÄÄÇ»ÅÍ¿¡¼­ »ı¼ºµÈ ´äÀ» ÀúÀåÇÒ ¹è¿­
-    int guess[4]; // ÇÃ·¹ÀÌ¾î°¡ ¿¹ÃøÇÏ´Â ´äÀ» ÀúÀåÇÒ ¹è¿­
-    int attempts = 0; // ÇÃ·¹ÀÌ¾îÀÇ ½Ãµµ È½¼ö
+    int answer[4]; // ì»´í“¨í„°ì—ì„œ ìƒì„±ëœ ë‹µì„ ì €ì¥í•  ë°°ì—´
+    int guess[4]; // í”Œë ˆì´ì–´ê°€ ì˜ˆì¸¡í•˜ëŠ” ë‹µì„ ì €ì¥í•  ë°°ì—´
+    int attempts = 0; // í”Œë ˆì´ì–´ì˜ ì‹œë„ íšŸìˆ˜
 
     
     srand(time(NULL)); 
     for (int i = 0; i < 4; i++)
     {
-        answer[i] = rand() % 10; // 0-9 »çÀÌÀÇ ³­¼ö »ı¼º
+        answer[i] = rand() % 10; // 0-9 ì‚¬ì´ì˜ ë‚œìˆ˜ ìƒì„±
     }
 
     
@@ -25,7 +25,7 @@ int main()
         printf("Enter your guess (4 digits): ");
         scanf_s("%1d%1d%1d%1d", &guess[0], &guess[1], &guess[2], &guess[3]); 
 
-        // guess¿Í answer ºñ±³
+        // guessì™€ answer ë¹„êµ
 
         int strikes = 0;
         int balls = 0;
@@ -43,7 +43,7 @@ int main()
                     if (guess[i] == answer[j])
                     {
                         balls++;
-                        break; // µ¿ÀÏÇÑ ¼ıÀÚ¸¦ ¿©·¯ ¹ø ¼¼´Â °ÍÀ» ¹æÁö
+                        break; // ë™ì¼í•œ ìˆ«ìë¥¼ ì—¬ëŸ¬ ë²ˆ ì„¸ëŠ” ê²ƒì„ ë°©ì§€
                     }
                 }
             }
@@ -64,7 +64,7 @@ int main()
 
     
     printf("Sorry, you lose.\n");
-    printf("The answer was: %d%d%d%d\n", answer[0], answer[1], answer[2], answer[3]);
+    printf("The answer : %d%d%d%d\n", answer[0], answer[1], answer[2], answer[3]);
 
     return 0;
 }
