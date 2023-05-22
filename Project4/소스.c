@@ -4,8 +4,8 @@
 
 int main()
 {
-    int answer[4]; // 컴퓨터에서 생성된 답을 저장할 배열
-    int guess[4]; // 플레이어가 예측하는 답을 저장할 배열
+    int answer[4]; // 컴퓨터에서 생성된 답을 저장
+    int guess[4]; // 플레이어가 예측하는 답을 저장
     int attempts = 0; // 플레이어의 시도 횟수
 
     
