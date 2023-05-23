@@ -16,7 +16,7 @@ int main(void)
     for (i = 0; i < 4; i++)
     {
         int num = 0;
-        answer[i] = (rand() % 10 + 1);// 1~9 사이의 난수 생성
+        answer[i] = (rand() % 9 + 1);// 1~9 사이의 난수 생성
         for (j = 0; j < i; j++)
         {
             if (answer[j] == answer[i])//중복되는 수 존재
